@@ -2,7 +2,7 @@ galaxy_info:
   author: Karol Kieglerski
   description: Role for restart nodes and wait to nodes come back over ssh.
 
-  license: license (GPLv2, CC-BY, etc)
+  license: BSD
 
   min_ansible_version: 2.4
 
@@ -10,7 +10,7 @@ galaxy_info:
    - name: Fedora
      versions:
      - all
-   - name: Centos
+   - name: CentOS
      versions:
      - all
    - name: Debian
@@ -20,6 +20,6 @@ galaxy_info:
      versions:
      - all
 
-  galaxy_tags: [reboot, ssh, wait_for]
+  galaxy_tags: [reboot, ssh]
 
 dependencies: []

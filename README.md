@@ -6,6 +6,7 @@ Role for restart nodes and wait to nodes come back over ssh.
 Role Variables
 --------------
 
+Default variables for that role
 ```
     reboot_delay_on: 2
     reboot_desc: "Ansible reboot"
@@ -14,6 +15,7 @@ Role Variables
     reboot_timeout: 360
 ```
 
+Variable set to get default ansible variable form inventory `ansible_port` 
 ```
     ssh_port: "{{ ansible_port }}"
 ```
