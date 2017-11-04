@@ -7,18 +7,21 @@ galaxy_info:
   min_ansible_version: 1.2
 
   platforms:
-   - name: Fedora
-     versions:
-     - all
-   - name: CentOS
-     versions:
-     - all
-   - name: Debian
-     versions:
-     - all
-   - name: Ubuntu
-     versions:
-     - all
+    - name: EL
+      version:
+      - all
+    - name: Fedora
+      versions:
+      - all
+    - name: CentOS
+      versions:
+      - all
+    - name: Debian
+      versions:
+      - all
+    - name: Ubuntu
+      versions:
+      - all
 
   galaxy_tags: [reboot, ssh]
 
