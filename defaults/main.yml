@@ -1,0 +1,6 @@
+---
+  reboot_delay_on: 2
+  reboot_desc: "Ansible reboot"
+  reboot_ignore_errors: true
+  reboot_come_back: 30
+  reboot_timeout: 360
