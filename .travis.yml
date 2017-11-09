@@ -10,7 +10,7 @@ install:
   - pip install ansible>=1.6.0
 
   # Add ansible.cfg to pick up roles path.
-  - printf '[defaults]\nroles_path = ../' > ansible.cfg
+  - "printf '[defaults]\nroles_path = ../' > ansible.cfg"
 
 script:
   # Check syntax
@@ -18,10 +18,10 @@ script:
 
   # Run
   - >
-  ansible-playbook -i tests/inventory tests/test.yml --connection=local --sudo
-  | grep -q 'changed=0.*failed=0'
-  && (echo 'Idempotence test: pass' && exit 0)
-  || (echo 'Idempotence test: fail' && exit 1)
+    ansible-playbook -i tests/inventory tests/test.yml --connection=local --sudo
+    | grep -q 'changed=0.*failed=0'
+    && (echo 'Idempotence test: pass' && exit 0)
+    || (echo 'Idempotence test: fail' && exit 1)
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
