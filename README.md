@@ -1,5 +1,7 @@
-reboot
+reboot 
 =========
+
+[![Build Status](https://travis-ci.org/kilerkarol/reboot.svg?branch=master)](https://travis-ci.org/kilerkarol/reboot)
 
 Role for restart nodes and wait to nodes come back over ssh.
 
