@@ -25,13 +25,18 @@ Variable set to get default ansible variable form inventory `ansible_port`
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
-      roles:
-         - { role: kilerkarol.reboot, tag: reboot }
+```
+  - hosts: servers
+    roles:
+      - { role: kilerkarol.reboot, tag: reboot }
+```
 
 License
 -------
 
 BSD
+
+Author Information
+------------------
+
+Karol Kieglerski
